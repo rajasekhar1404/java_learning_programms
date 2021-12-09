@@ -261,8 +261,20 @@ in the above example raja is the package name, firstpak is my class name.
             
       List<T>: It is also stores group of eliments and grows automatically, the main difference between Set and List is, List can allow *duplicate values*.
 
-         Stack<T>
+         Stack<T>: 
+               if follow LIFO(Last in first out) scheme, 
+               push: inserting a elements to stack is called push, 
+               pop: removing a element is called pop.
+               peek: it will show the top most element.
+               Search: to find a element present in this class or not.
+               we cannot insert inbetween the list.
+
          LinkedList<T>
+               it will stores the data in nodes,
+               in each node there will be three blocks,
+               Those blocks consists of Link, data and again Link.
+               with this method we can get the previous and next element data.
+               
          ArrayList<T>
          Vector<T>
       Queue<T>: It allow elements to arrange in a order.
