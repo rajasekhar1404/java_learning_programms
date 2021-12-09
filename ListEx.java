@@ -44,14 +44,21 @@ class ListEx {
 
 
 
-// Iterator<String> newName = name.iterator();
+Iterator<String> newName = name.iterator();
 
-// while(newName.hasNext())
-// {
-//     String v = newName.next();
-//     String newvalues = "ginious "+v;
-//     System.out.println("here is the value "+newvalues);
-// }
+        while(newName.hasNext())
+        {
+            String v = newName.next();
+            String newvalues = "ginious "+v;
+            System.out.println("here is the value "+newvalues);
+        }
+
+            while(newName.hasNext())
+            {
+                String v = newName.next();
+                String newvalues = "ginious "+v;
+                System.out.println("here is the value "+newvalues);
+            }
 
     
     }
