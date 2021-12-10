@@ -1,29 +1,37 @@
-// program to demonstrate stack in java
 import java.util.*;
 
-class StackEx {
+class stackex {
     public static void main(String[] args)
     {
-        Stack<Integer> marks = new Stack<Integer>();
-        
-        // Push an element
-        marks.push(85);
-        marks.push(75);
-        marks.push(88);
-        marks.push(85);
-        marks.push(99);
-        marks.push(100);
+        Stack<String> names = new Stack<String>();
 
-            //it checks whether the stack is empty or not
-        if(marks.empty())
-            System.out.println("marks stack is empty");
-        else
-            // it returns the top element
-            System.out.println("top element: "+marks.peek());
+        names.add("rajasekhar");
+        names.add("karampudi");
+        names.add("aryanraj");
+        names.add("let's try to push this");
 
-        marks.pop();
-            // it removed the top elements from the stack
-            System.out.println("after pop: "+marks.peek());
-            System.out.println(marks.search(88)) ;
+        System.out.println(names);
+
+        System.out.println("this stack cantain elements: "+names.empty());
+
+        names.push("inserting an element to the top");
+
+        System.out.println("Printing the top element after adding a element: "+names.peek());
+
+        System.out.println("location of karampudi element in the list: "+names.search("karampudi"));
+
+        for(String s : names)
+        {
+            System.out.println("hello bother "+s+" good morning");
+        }
+
+// just remembering the scanner method onemore time.
+        System.out.print("please enter a value: ");
+
+        Scanner raja = new Scanner(System.in);
+
+        String a = raja.nextLine();
+
+        System.out.println("Here is the value you have entered "+a);
     }
 }
