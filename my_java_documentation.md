@@ -233,3 +233,59 @@ in the above example raja is the package name, firstpak is my class name.
  - Boolean: to convert boolean type values
  
 ```
+# Collection framework
+```
+ - collection framework consist of set of interfaces and frameworks.
+ - collection framework is used to perform actions on collection of objects.
+ - we can create array's for classes also, not only for variables, we need to give the class name instead of variable type.
+ ex: int a[] = {10, 20, 30, 40, 50} <!-- this is a array for a variable -->
+ - Students a[] =new Student[5]; <!-- this is a array of Students class -->
+ - disadvantage of using array for classes is, we can not store different type of values in one array.
+ - we can not insert data inbetween two values using arrays.
+ - collection classes or collection containers are available in java.util
+
+ - collection of classes to handle group of objects is called collection framework.
+
+ - Interface types:
+      Set<T> : It will allows to store set of values, and it will expands storage automatically, it will not allow duplicate values.
+
+         Implement classes:
+         HashSet<T> : it will not garentee the order of the elements.
+         LinkedHashSet<T> : it will garentee the order of the elements
+
+            We can perform actions on individual elements using following types.
+            - for-each loop
+            - Iterator - it can go only in forward way, it can't go back.
+            - ListIterator - used to operate in both tbe directions.
+            - Enumeratoin
+            
+      List<T>: It is also stores group of eliments and grows automatically, the main difference between Set and List is, List can allow *duplicate values*.
+
+         Stack<T>: 
+               if follow LIFO(Last in first out) scheme, 
+               push: inserting a elements to stack is called push, 
+               pop: removing a element is called pop.
+               peek: it will show the top most element.
+               Search: to find a element present in this class or not.
+               we cannot insert inbetween the list.
+
+         LinkedList<T>
+               it will stores the data in nodes,
+               in each node there will be three blocks,
+               Those blocks consists of Link, data and again Link.
+               with this method we can get the previous and next element data.
+
+         ArrayList<T>
+               it will use array to store the elements.
+               
+         Vector<T>
+      Queue<T>: It allow elements to arrange in a order.
+      Speciality of queue is: FIFO(first in first out).
+
+         LinkedList<T>
+
+      Map<T>:it is allowd to store values in key values pair.
+
+         HashMap<K,V>
+         Hashtable<K,V>
+```
