@@ -274,8 +274,10 @@ in the above example raja is the package name, firstpak is my class name.
                in each node there will be three blocks,
                Those blocks consists of Link, data and again Link.
                with this method we can get the previous and next element data.
-               
+
          ArrayList<T>
+               it will use array to store the elements.
+               
          Vector<T>
       Queue<T>: It allow elements to arrange in a order.
       Speciality of queue is: FIFO(first in first out).
