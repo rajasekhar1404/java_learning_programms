@@ -289,3 +289,10 @@ in the above example raja is the package name, firstpak is my class name.
          HashMap<K,V>
          Hashtable<K,V>
 ```
+# Important classes in Java util package
+```
+ - Arrays: we have planty of predefined classes in java.util class,, with them we can do lot of usefull stuff like sorting a array, finding whether a array is equals to another array or not..etc.
+ 
+ - StringTokenizer: It will divide a large string into small parts and assign each part a tocken.
+ - calander and date:
+```
