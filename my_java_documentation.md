@@ -296,3 +296,28 @@ in the above example raja is the package name, firstpak is my class name.
  - StringTokenizer: It will divide a large string into small parts and assign each part a tocken.
  - calander and date:
 ```
+
+# Multi Threding in java
+```
+ - Single Tasking:
+      Sequential - one after another
+ - Multi Tasking:
+      Concurrent or parallel execution, means each task runs for few time.
+      Types of multi tasking:
+         - process based: multiple programs runs each for some time.
+               It will take more storage(memory)(each program takes separate memory), also called as heavy-weight-processing.
+         - Thread-based: One program is divided with multiple modules.
+               There is only one program, so less memory allocated, compared to process-based., also called as light-weight processing.
+ - Thread: it is a single flow of excecution.
+
+ *Steps to create and run threads:*
+   1. create a class that extends Thread or implements Runnable
+
+   2. Write run() method.
+
+   3. create an object to above class.
+
+   4. create Thread object and link it with our class object which is created in step-3.
+
+   5. Run the thread using start()
+```
