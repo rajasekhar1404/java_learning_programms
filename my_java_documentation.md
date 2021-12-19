@@ -353,4 +353,11 @@ in the above example raja is the package name, firstpak is my class name.
       
       it will allow an object to be used by one thread at a time.
 
+      we can add a keyword *synchronized* to a method, and we can make that method run only one thread at a time.
+
+      or we can give a synchronized block with in a method.
+
+   Deadlock:
+      permenent blocking of a thread.
+
 ```
