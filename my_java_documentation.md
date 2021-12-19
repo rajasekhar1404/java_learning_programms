@@ -331,4 +331,6 @@ in the above example raja is the package name, firstpak is my class name.
       sleep(milliseconds)
       suspend(), resume() - deprecated
       wait(), notify()/notifyall()
+
+      join(): it will stop the next thread until a thread completes excecuting.
 ```

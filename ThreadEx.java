@@ -11,6 +11,11 @@ class Mythread extends Thread
         for(int i = 10; i>=1; i--)
         {
             System.out.println(a+": "+i);
+            try
+            {
+                Thread.sleep(1000);
+            }
+            catch(Exception e){}
         }
     }
 }
@@ -36,6 +41,11 @@ class ThreadEx {
         th1.setPriority(9);
         System.out.println(th1);
         th1.start();
+        
+        try{
+        th1.join();
+        }
+        catch(Exception e){}
 
         Mythread th2 = new Mythread("Second");
         Thread th3 = new Thread(th2);
@@ -43,6 +53,18 @@ class ThreadEx {
         System.out.println(th2);
         th3.start();
 
+        // try
+        // {
+        //     t.sleep(10000);
+        // }
+        // catch(Exception a)
+        // {
+            
+        // }
+        try{
+            th3.join();
+            }
+            catch(Exception e){}
         System.out.println("main thread ends");
     }
 }
