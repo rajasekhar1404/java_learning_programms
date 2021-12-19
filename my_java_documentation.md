@@ -320,4 +320,15 @@ in the above example raja is the package name, firstpak is my class name.
    4. create Thread object and link it with our class object which is created in step-3.
 
    5. Run the thread using start()
+
+   we can set priorities to tell which thread should run first, 
+   for that we have setPriority(Field/priority)
+   MAX_PRIORITY - 10
+   NORM_PRIORITY - 5 (Default)
+   MIN_PRIORITY - 1
+
+   sleep or suspend a thread:
+      sleep(milliseconds)
+      suspend(), resume() - deprecated
+      wait(), notify()/notifyall()
 ```
