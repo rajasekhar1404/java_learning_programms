@@ -33,12 +33,19 @@ class ThreadEx {
         // Thread group name: main
 
         System.out.println("main thread starts");
+
+        // first thread starts
+
+        ThreadGroup k = new ThreadGroup("krs");
         Mythread th = new Mythread("First");
-        Thread th1 = new Thread(th);
+        Thread th1 = new Thread(k,th);
 
         //setname is used to give a name to a thread.
         th1.setName("rajasekhar");
         th1.setPriority(9);
+
+        // setting a user thread to Daemon thread.
+        th1.setDaemon(true);
         System.out.println(th1);
         th1.start();
         
@@ -47,9 +54,13 @@ class ThreadEx {
         }
         catch(Exception e){}
 
+        
+        //2nd thread starts
+        
         Mythread th2 = new Mythread("Second");
         Thread th3 = new Thread(th2);
         th3.setPriority(2);
+        th2.setDaemon(true);
         System.out.println(th2);
         th3.start();
 
@@ -65,6 +76,10 @@ class ThreadEx {
             th3.join();
             }
             catch(Exception e){}
+
+        System.out.println(t.isDaemon());
+        System.out.println(th1.isDaemon());
+        System.out.println(th2.isDaemon());
         System.out.println("main thread ends");
     }
 }
