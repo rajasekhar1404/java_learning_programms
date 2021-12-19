@@ -333,4 +333,24 @@ in the above example raja is the package name, firstpak is my class name.
       wait(), notify()/notifyall()
 
       join(): it will stop the next thread until a thread completes excecuting.
+
+   Daemon Threads:
+      Server thread
+
+      there are two types of threads, one is user thread, next one is Daemon thread, these will service user threads, they starts automatically when the system starts until the system ends.
+
+      we can convert a user thread to Daemon thread using setDaemon(true);
+      we can check if it as Daemon thread using: isDaemon();
+
+   Thread Life cycle:
+      new/create
+      Runnable
+      Running/execute
+      blocked
+      end/terminated
+
+   Synchronization:
+      
+      it will allow an object to be used by one thread at a time.
+
 ```
