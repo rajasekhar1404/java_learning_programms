@@ -361,3 +361,31 @@ in the above example raja is the package name, firstpak is my class name.
       permenent blocking of a thread.
 
 ```
+
+# AWT in java
+```
+ Object - checkboxGroup
+        - Component     -  Lablel
+                        -  Button
+                        -  Checkbox
+                        -  Choice
+                        -  List
+                        -  Canvas
+                        -  Scrollbar
+                        -  TextComponentf  - TextArea
+                                           - TextFeild
+                        -  Container -  Panel -  Applet
+                                     - Window -  Frame
+
+
+ - Event delegation model:
+      it is used to run the code behind the gui, if we click a button, it will run the code.
+      Event:
+         performing some action on component.
+
+      steps for creating an event delegation model; windowlistener
+         1. add the componenet to the application
+         2. add listeners to the components. Ex: Actionlistener, 
+         3. implement methods related to the listener.
+         4. 
+```
