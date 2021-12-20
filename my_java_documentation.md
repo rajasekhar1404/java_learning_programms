@@ -387,5 +387,11 @@ in the above example raja is the package name, firstpak is my class name.
          1. add the componenet to the application
          2. add listeners to the components. Ex: Actionlistener, 
          3. implement methods related to the listener.
-         4. 
+
+ - Layout Managers
+      1. Flow Layout
+      2. Border Layout
+      3. Grid Layout
+      4. Card Layout
+      5. GridBag Layout
 ```
