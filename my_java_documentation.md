@@ -364,7 +364,7 @@ in the above example raja is the package name, firstpak is my class name.
 
 # AWT in java
 ```
- Object - checkboxGroup
+ -  Object - checkboxGroup
         - Component     -  Lablel
                         -  Button
                         -  Checkbox
@@ -389,7 +389,7 @@ in the above example raja is the package name, firstpak is my class name.
          3. implement methods related to the listener.
 
  - Layout Managers
-      1. Flow Layout
+      1. Flow Layout - Left to right and top to bottom.
       2. Border Layout
       3. Grid Layout
       4. Card Layout
