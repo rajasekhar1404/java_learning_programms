@@ -390,8 +390,8 @@ in the above example raja is the package name, firstpak is my class name.
 
  - Layout Managers
       1. Flow Layout - Left to right and top to bottom.
-      2. Border Layout
-      3. Grid Layout
-      4. Card Layout
-      5. GridBag Layout
+      2. Border Layout - to add the buttons in the borders, north, west, south, east positions.
+      3. Grid Layout - it will create a grid structures and insert the required component in them.
+      4. Card Layout - it is used to show the different cards on the top.
+      5. GridBag Layout - 
 ```
