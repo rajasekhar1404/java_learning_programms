@@ -395,3 +395,18 @@ in the above example raja is the package name, firstpak is my class name.
       4. Card Layout - it is used to show the different cards on the top.
       5. GridBag Layout - 
 ```
+
+----
+
+| Component | Listener |
+|-----------|----------|
+| Button | ActionListner |
+| CheckBox | ItemListener |
+| CheckBoxGroup | ItemListener |
+| TextField | ActionListener, FocusedListener |
+| Choice | ActionListener, ItemListener |
+| List | ActionListener, ItemListener |
+| Scrollbar | AdjustmentListener, MouseMotionListener |
+| Frame | WindowListener |
+| Keyboard | KeyListener |
+
