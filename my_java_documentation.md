@@ -410,3 +410,10 @@ in the above example raja is the package name, firstpak is my class name.
 | Frame | WindowListener |
 | Keyboard | KeyListener |
 
+
+----
+
+# Swings in java
+
+ - Swings are advanced way for awt classes. 
+ - awt classes will use C concepts
