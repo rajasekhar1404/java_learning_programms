@@ -1,6 +1,5 @@
 //program to demonstrate choise box
 import java.awt.*;
-import java.awt.event.*;
 
 class ChoiseBoxEx extends Frame {
 ChoiseBoxEx()
