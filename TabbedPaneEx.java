@@ -1,7 +1,7 @@
 //program to demonstrate tabbed pane
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
+//import java.awt.event.*;
 
 class TabbedPaneEx extends JFrame {
     TabbedPaneEx()
@@ -9,13 +9,15 @@ class TabbedPaneEx extends JFrame {
         
         FlowLayout fl = new FlowLayout();
         this.setLayout(fl);
-        Container c = this.getContentPane();
+  //      Container c = this.getContentPane();
      
         //Tab pane creation
         JTabbedPane tb = new JTabbedPane(JTabbedPane.TOP);
         this.add(tb);
         tb.add("Homee", new Home());
         tb.add("View", new Animations());
+
+        tb.insertTab("Draw", null, new Animations(), "home elements", 0);
     }
 
 public static void main(String[] args)
