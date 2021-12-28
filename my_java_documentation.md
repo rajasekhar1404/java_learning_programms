@@ -433,3 +433,6 @@ in the above example raja is the package name, firstpak is my class name.
 - start()
 - Stop()
 - Destroy()
+
+applet is a decripted class, which is not executable by java SE 9 and latest releases, and most of the recent browsers stopped working applet classes.
+
