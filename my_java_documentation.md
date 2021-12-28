@@ -417,3 +417,19 @@ in the above example raja is the package name, firstpak is my class name.
 
  - Swings are advanced way for awt classes. 
  - awt classes will use C concepts
+ - Swings is same as awt classes with but with extra look and feel
+ - EXIT_ON_CLOSE: is used to close the window 
+ - for more informaton: checkout this: https://github.com/rajasekhar1404/java_learning_programms/blob/master/JSwingCOMPSeX.java
+
+# Aplet in java
+- aplets are used to create internet based application.
+- it will increase the user interaction on the application.
+- these are used to take the input from html programms and give an output in the webpage.
+- .class file is called as byte code,
+- .class file is integrated with html file.
+
+- Life cycle of aplet
+- init()
+- start()
+- Stop()
+- Destroy()
