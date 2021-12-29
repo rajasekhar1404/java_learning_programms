@@ -436,3 +436,23 @@ in the above example raja is the package name, firstpak is my class name.
 
 applet is a decripted class, which is not executable by java SE 9 and latest releases, and most of the recent browsers stopped working applet classes.
 
+# Miscellanous classes in java
+
+- Garbage collection - it is used to remove unwanted and unused methods from the memory.
+- type casting - converting one data type to another data type
+  - there are two types of type casting - narrowing, widening
+    - converting small data type to large data type. (byte to int); is called wideninng type casting.
+    - 
+- upcasting downcasting
+- dynamic method dispatch, runtime polimoriphism
+
+# Encapsulation, polymorphism, Abstraction in JAVA
+
+- Wrapping up the varibles in a class is called as Encapsulation, which is done by diclaring the varibles as private.
+- Polymorphism is changing the behaviour based on the situation. diclaring a method with same name but different parameters.
+- Abstraction is representing essentials features without including background data. abstract classes can only show what that program can capable of but didn't show the code of that programs.
+
+# String builder in JAVA 
+ StringBuilder is a immutable class, which is same as StringBuffer class, it is used to store a string data in the same memory location, Generally, we cannot change a String data, that means, if we update a String value, it will allocate in new memory location,
+ but with srtingBuilder or StringBuffer we can add data in the same memory location,
+ the main difference betwen StringBuilder and StringBuffer are, StringBuffer can be synchronized, but there is garentee for stringBuffer classed for Synchronization.
