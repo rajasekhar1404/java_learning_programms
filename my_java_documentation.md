@@ -456,3 +456,8 @@ applet is a decripted class, which is not executable by java SE 9 and latest rel
  StringBuilder is a immutable class, which is same as StringBuffer class, it is used to store a string data in the same memory location, Generally, we cannot change a String data, that means, if we update a String value, it will allocate in new memory location,
  but with srtingBuilder or StringBuffer we can add data in the same memory location,
  the main difference betwen StringBuilder and StringBuffer are, StringBuffer can be synchronized, but there is garentee for stringBuffer classed for Synchronization.
+
+# Regular expressions in java
+
+Regular expressions are used to compare a string based on a pattern given.
+we can implement regular expressions using java.util.regex package.
