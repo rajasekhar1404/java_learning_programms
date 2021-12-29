@@ -233,3 +233,206 @@ in the above example raja is the package name, firstpak is my class name.
  - Boolean: to convert boolean type values
  
 ```
+# Collection framework
+```
+ - collection framework consist of set of interfaces and frameworks.
+ - collection framework is used to perform actions on collection of objects.
+ - we can create array's for classes also, not only for variables, we need to give the class name instead of variable type.
+ ex: int a[] = {10, 20, 30, 40, 50} <!-- this is a array for a variable -->
+ - Students a[] =new Student[5]; <!-- this is a array of Students class -->
+ - disadvantage of using array for classes is, we can not store different type of values in one array.
+ - we can not insert data inbetween two values using arrays.
+ - collection classes or collection containers are available in java.util
+
+ - collection of classes to handle group of objects is called collection framework.
+
+ - Interface types:
+      Set<T> : It will allows to store set of values, and it will expands storage automatically, it will not allow duplicate values.
+
+         Implement classes:
+         HashSet<T> : it will not garentee the order of the elements.
+         LinkedHashSet<T> : it will garentee the order of the elements
+
+            We can perform actions on individual elements using following types.
+            - for-each loop
+            - Iterator - it can go only in forward way, it can't go back.
+            - ListIterator - used to operate in both tbe directions.
+            - Enumeratoin
+            
+      List<T>: It is also stores group of eliments and grows automatically, the main difference between Set and List is, List can allow *duplicate values*.
+
+         Stack<T>: 
+               if follow LIFO(Last in first out) scheme, 
+               push: inserting a elements to stack is called push, 
+               pop: removing a element is called pop.
+               peek: it will show the top most element.
+               Search: to find a element present in this class or not.
+               we cannot insert inbetween the list.
+
+         LinkedList<T>
+               it will stores the data in nodes,
+               in each node there will be three blocks,
+               Those blocks consists of Link, data and again Link.
+               with this method we can get the previous and next element data.
+
+         ArrayList<T>
+               it will use array to store the elements.
+               
+         Vector<T>
+      Queue<T>: It allow elements to arrange in a order.
+      Speciality of queue is: FIFO(first in first out).
+
+         LinkedList<T>
+
+      Map<T>:it is allowd to store values in key values pair.
+
+         HashMap<K,V>
+         Hashtable<K,V>
+```
+# Important classes in Java util package
+```
+ - Arrays: we have planty of predefined classes in java.util class,, with them we can do lot of usefull stuff like sorting a array, finding whether a array is equals to another array or not..etc.
+ 
+ - StringTokenizer: It will divide a large string into small parts and assign each part a tocken.
+ - calander and date:
+```
+
+# Multi Threding in java
+```
+ - Single Tasking:
+      Sequential - one after another
+ - Multi Tasking:
+      Concurrent or parallel execution, means each task runs for few time.
+      Types of multi tasking:
+         - process based: multiple programs runs each for some time.
+               It will take more storage(memory)(each program takes separate memory), also called as heavy-weight-processing.
+         - Thread-based: One program is divided with multiple modules.
+               There is only one program, so less memory allocated, compared to process-based., also called as light-weight processing.
+ - Thread: it is a single flow of excecution.
+
+ *Steps to create and run threads:*
+   1. create a class that extends Thread or implements Runnable
+
+   2. Write run() method.
+
+   3. create an object to above class.
+
+   4. create Thread object and link it with our class object which is created in step-3.
+
+   5. Run the thread using start()
+
+   we can set priorities to tell which thread should run first, 
+   for that we have setPriority(Field/priority)
+   MAX_PRIORITY - 10
+   NORM_PRIORITY - 5 (Default)
+   MIN_PRIORITY - 1
+
+   sleep or suspend a thread:
+      sleep(milliseconds)
+      suspend(), resume() - deprecated
+      wait(), notify()/notifyall()
+
+      join(): it will stop the next thread until a thread completes excecuting.
+
+   Daemon Threads:
+      Server thread
+
+      there are two types of threads, one is user thread, next one is Daemon thread, these will service user threads, they starts automatically when the system starts until the system ends.
+
+      we can convert a user thread to Daemon thread using setDaemon(true);
+      we can check if it as Daemon thread using: isDaemon();
+
+   Thread Life cycle:
+      new/create
+      Runnable
+      Running/execute
+      blocked
+      end/terminated
+
+   Synchronization:
+      
+      it will allow an object to be used by one thread at a time.
+
+      we can add a keyword *synchronized* to a method, and we can make that method run only one thread at a time.
+
+      or we can give a synchronized block with in a method.
+
+   Deadlock:
+      permenent blocking of a thread.
+
+```
+
+# AWT in java
+```
+ -  Object - checkboxGroup
+        - Component     -  Lablel
+                        -  Button
+                        -  Checkbox
+                        -  Choice
+                        -  List
+                        -  Canvas
+                        -  Scrollbar
+                        -  TextComponentf  - TextArea
+                                           - TextFeild
+                        -  Container -  Panel -  Applet
+                                     - Window -  Frame
+
+
+ - Event delegation model:
+      it is used to run the code behind the gui, if we click a button, it will run the code.
+      Event:
+         performing some action on component.
+
+      steps for creating an event delegation model; windowlistener
+         1. add the componenet to the application
+         2. add listeners to the components. Ex: Actionlistener, 
+         3. implement methods related to the listener.
+
+ - Layout Managers
+      1. Flow Layout - Left to right and top to bottom.
+      2. Border Layout - to add the buttons in the borders, north, west, south, east positions.
+      3. Grid Layout - it will create a grid structures and insert the required component in them.
+      4. Card Layout - it is used to show the different cards on the top.
+      5. GridBag Layout - 
+```
+
+----
+
+| Component | Listener |
+|-----------|----------|
+| Button | ActionListner |
+| CheckBox | ItemListener |
+| CheckBoxGroup | ItemListener |
+| TextField | ActionListener, FocusedListener |
+| Choice | ActionListener, ItemListener |
+| List | ActionListener, ItemListener |
+| Scrollbar | AdjustmentListener, MouseMotionListener |
+| Frame | WindowListener |
+| Keyboard | KeyListener |
+
+
+----
+
+# Swings in java
+
+ - Swings are advanced way for awt classes. 
+ - awt classes will use C concepts
+ - Swings is same as awt classes with but with extra look and feel
+ - EXIT_ON_CLOSE: is used to close the window 
+ - for more informaton: checkout this: https://github.com/rajasekhar1404/java_learning_programms/blob/master/JSwingCOMPSeX.java
+
+# Aplet in java
+- aplets are used to create internet based application.
+- it will increase the user interaction on the application.
+- these are used to take the input from html programms and give an output in the webpage.
+- .class file is called as byte code,
+- .class file is integrated with html file.
+
+- Life cycle of aplet
+- init()
+- start()
+- Stop()
+- Destroy()
+
+applet is a decripted class, which is not executable by java SE 9 and latest releases, and most of the recent browsers stopped working applet classes.
+
