@@ -461,3 +461,6 @@ applet is a decripted class, which is not executable by java SE 9 and latest rel
 
 Regular expressions are used to compare a string based on a pattern given.
 we can implement regular expressions using java.util.regex package.
+for more info check below image
+
+![All types of regular expressions](Screenshot%202021-12-30%20230714.png))
