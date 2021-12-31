@@ -468,3 +468,5 @@ for more info check below image
 # Lambda Expressions
 
 Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
+
+instanceof is used to check if an object is related to that class or not.
