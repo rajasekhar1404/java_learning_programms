@@ -464,3 +464,7 @@ we can implement regular expressions using java.util.regex package.
 for more info check below image
 
 ![All types of regular expressions](Screenshot%202021-12-30%20230714.png))
+
+# Lambda Expressions
+
+Lambda expressions are similar to methods, but they do not need a name and they can be implemented right in the body of a method.
